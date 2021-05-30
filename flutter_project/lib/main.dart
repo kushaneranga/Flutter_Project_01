@@ -85,3 +85,54 @@ import 'package:flutter/material.dart';
 //     );
 //   }
 // }
+
+//4th Test
+
+import 'package:device_preview/device_preview.dart';
+
+void main() => runApp(
+    DevicePreview(
+      builder: (context) => MyApp(), // Wrap your app
+    ),
+  );
+
+class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      locale: DevicePreview.locale(context), // Add the locale here
+      builder: DevicePreview.appBuilder, // Add the builder here
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Heading'),
+        leading: IconButton(
+          icon: Icon(Icons.menu),
+          onPressed: () {},
+        ),
+        actions: <Widget>[
+          IconButton(
+            icon: Icon(Icons.search),
+            onPressed: () {},
+          ),
+          IconButton(
+            icon: Icon(Icons.more_horiz),
+            onPressed: () {},
+          ),
+        ],
+      ),
+    );
+  }
+}
