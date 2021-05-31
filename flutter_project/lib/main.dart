@@ -158,6 +158,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false, // Debug Label.
       home: DefaultTabController(
         length: 3,
         child: Scaffold(
