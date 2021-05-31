@@ -193,6 +193,7 @@ class MyApp extends StatelessWidget {
                 Tab(icon: Icon(Icons.directions_bike)),
               ],
             ),
+            elevation: 22.0, // AppBar bottom shadow.
           ),
           body: TabBarView(
             children: [
