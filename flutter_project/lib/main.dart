@@ -184,14 +184,14 @@ class MyApp extends StatelessWidget {
             bottom: TabBar(
               unselectedLabelColor: Colors.white,
               labelColor: Colors.orange[400],
-            tabs: [
-              Tab(
-                  icon: Icon(Icons.directions_car),
-                  text: 'Kushan',
-              ),
-              Tab(icon: Icon(Icons.directions_transit)),
-              Tab(icon: Icon(Icons.directions_bike)),
-            ],
+              tabs: [
+                Tab(
+                    icon: Icon(Icons.directions_car),
+                    text: 'Kushan',
+                ),
+                Tab(icon: Icon(Icons.directions_transit)),
+                Tab(icon: Icon(Icons.directions_bike)),
+              ],
             ),
           ),
           body: TabBarView(
