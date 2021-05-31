@@ -138,6 +138,11 @@ class MyHomePage extends StatelessWidget {
             'assets/backgroundimg.jpg',
             fit: BoxFit.cover,
         ),
+        // bottom: PreferredSize(
+        //   child: Container(),
+        //   preferredSize: Size.fromHeight(100.0),
+        // ),
+        // Above code is create null bottom size.
       ),
     );
   }
