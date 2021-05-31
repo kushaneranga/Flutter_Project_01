@@ -134,6 +134,10 @@ class MyHomePage extends StatelessWidget {
             onPressed: () {},
           ),
         ],
+        flexibleSpace: Image.asset(
+            'assets/backgroundimg.jpg',
+            fit: BoxFit.cover,
+        ),
       ),
     );
   }
