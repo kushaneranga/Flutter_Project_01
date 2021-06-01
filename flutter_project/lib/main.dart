@@ -445,6 +445,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
+  int count = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -453,17 +454,22 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Center(
         child: Column(
-          children: [
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
             Text(
                 'Fist Flutter Project one',
               style: TextStyle(fontSize: 20.0),
             ),
             Text(
-              'Fist Flutter Project one',
-              style: TextStyle(fontSize: 20.0),
+              '$count', // Or=> count.toString(),
+              style: Theme.of(context).textTheme.display1,
             ),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: (){},
       ),
     );
   }
