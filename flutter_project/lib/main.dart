@@ -372,3 +372,57 @@ class MyHomePage extends StatefulWidget {
 //     );
 //   }
 // }
+
+// Row & Column ...............................................................
+
+// class _MyHomePageState extends State<MyHomePage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         backgroundColor: Colors.redAccent,
+//         title: Text('Kushan Eranga'),
+//       ),
+//       body: Container(
+//         color: Colors.orange,
+//         height: 300.0,
+//         child: Row(
+//           mainAxisAlignment: MainAxisAlignment.spaceAround,
+//           crossAxisAlignment: CrossAxisAlignment.start,
+//           children: [
+//             Text(
+//               'Text01',
+//               style: TextStyle(fontSize: 20.0),
+//             ),
+//             Text(
+//               'Text01',
+//               style: TextStyle(fontSize: 20.0),
+//             ),
+//             Text(
+//               'Text01',
+//               style: TextStyle(fontSize: 20.0),
+//             ),
+//             Column(
+//               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//               crossAxisAlignment: CrossAxisAlignment.center,
+//               children: [
+//                 Text(
+//                   'Text01.1',
+//                   style: TextStyle(fontSize: 20.0),
+//                 ),
+//                 Text(
+//                   'Text01.1',
+//                   style: TextStyle(fontSize: 20.0),
+//                 ),
+//                 Text(
+//                   'Text01.1',
+//                   style: TextStyle(fontSize: 20.0),
+//                 ),
+//               ],
+//             )
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
