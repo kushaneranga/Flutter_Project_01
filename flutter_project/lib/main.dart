@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 // Remove comments shortcut ==> ctrl+?
@@ -150,69 +151,75 @@ import 'package:flutter/material.dart';
 
 // 5th Test
 
-void main(){
-  runApp(MyApp());
-}
+// void main(){
+//   runApp(MyApp());
+// }
+//
+// class MyApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false, // Debug Label.
+//       theme: ThemeData(
+//         brightness: Brightness.dark, // Dark Theme.
+//         primarySwatch: Colors.orange, // for dark Theme.
+//       ),
+//       home: DefaultTabController(
+//         length: 3,
+//         child: Scaffold(
+//           appBar: AppBar(
+//             title: Text('Heading'),
+//             leading: IconButton(
+//               icon: Icon(Icons.menu),
+//               onPressed: () {},
+//             ),
+//             actions: <Widget>[
+//               IconButton(
+//                 icon: Icon(Icons.search),
+//                 onPressed: () {},
+//               ),
+//               IconButton(
+//                 icon: Icon(Icons.more_horiz),
+//                 onPressed: () {},
+//               ),
+//             ],
+//             flexibleSpace: Image.asset(
+//                 'assets/backgroundimg.jpg',
+//                 fit: BoxFit.cover,
+//             ),
+//             bottom: TabBar(
+//               unselectedLabelColor: Colors.white,
+//               labelColor: Colors.orange[400],
+//               tabs: [
+//                 Tab(
+//                     icon: Icon(Icons.directions_car),
+//                     text: 'Kushan',
+//                 ),
+//                 Tab(icon: Icon(Icons.directions_transit)),
+//                 Tab(icon: Icon(Icons.directions_bike)),
+//               ],
+//             ),
+//             elevation: 22.0, // AppBar bottom shadow.
+//           ),
+//           body: TabBarView(
+//             children: [
+//               tab1(), // Pass widget tab1 (widget only)
+//               Icon(Icons.directions_transit),
+//               Icon(Icons.directions_bike),
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+//
+// Widget tab1() {
+//   return Container(
+//     child: Center(
+//       child: Text('Kushan'),
+//     ),
+//   );
+// }
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false, // Debug Label.
-      home: DefaultTabController(
-        length: 3,
-        child: Scaffold(
-          appBar: AppBar(
-            title: Text('Heading'),
-            leading: IconButton(
-              icon: Icon(Icons.menu),
-              onPressed: () {},
-            ),
-            actions: <Widget>[
-              IconButton(
-                icon: Icon(Icons.search),
-                onPressed: () {},
-              ),
-              IconButton(
-                icon: Icon(Icons.more_horiz),
-                onPressed: () {},
-              ),
-            ],
-            flexibleSpace: Image.asset(
-                'assets/backgroundimg.jpg',
-                fit: BoxFit.cover,
-            ),
-            bottom: TabBar(
-              unselectedLabelColor: Colors.white,
-              labelColor: Colors.orange[400],
-              tabs: [
-                Tab(
-                    icon: Icon(Icons.directions_car),
-                    text: 'Kushan',
-                ),
-                Tab(icon: Icon(Icons.directions_transit)),
-                Tab(icon: Icon(Icons.directions_bike)),
-              ],
-            ),
-            elevation: 22.0, // AppBar bottom shadow.
-          ),
-          body: TabBarView(
-            children: [
-              tab1(), // Pass widget tab1 (widget only)
-              Icon(Icons.directions_transit),
-              Icon(Icons.directions_bike),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
 
-Widget tab1() {
-  return Container(
-    child: Center(
-      child: Text('Kushan'),
-    ),
-  );
-}
