@@ -426,3 +426,45 @@ import 'package:flutter/material.dart';
 //     );
 //   }
 // }
+
+// 9th Test.
+
+void main (){
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'My Test App',
+      home: MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Kushan Eranga'),
+      ),
+      body: Center(
+        child: Column(
+          children: [
+            Text(
+                'Fist Flutter Project one',
+              style: TextStyle(fontSize: 20.0),
+            ),
+            Text(
+              'Fist Flutter Project one',
+              style: TextStyle(fontSize: 20.0),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
