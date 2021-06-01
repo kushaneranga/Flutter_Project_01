@@ -309,7 +309,29 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.redAccent,
         title: Text('Kushan Eranga'),
       ),
-      body: Container(),
+      body: Container(
+        // alignment: Alignment.center, //for center
+        color: Colors.orange,
+        width: 100,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text(
+              'Text01',
+            style: TextStyle(fontSize: 20.0),
+            ),
+            Text(
+              'Text01',
+              style: TextStyle(fontSize: 20.0),
+            ),
+            Text(
+              'Text01',
+              style: TextStyle(fontSize: 20.0),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
