@@ -301,37 +301,39 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.redAccent,
-        title: Text('Kushan Eranga'),
-      ),
-      body: Container(
-        // alignment: Alignment.center, //for center
-        color: Colors.orange,
-        width: 100,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Text(
-              'Text01',
-            style: TextStyle(fontSize: 20.0),
-            ),
-            Text(
-              'Text01',
-              style: TextStyle(fontSize: 20.0),
-            ),
-            Text(
-              'Text01',
-              style: TextStyle(fontSize: 20.0),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
+// Column.....................................................................
+
+// class _MyHomePageState extends State<MyHomePage> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         backgroundColor: Colors.redAccent,
+//         title: Text('Kushan Eranga'),
+//       ),
+//       body: Container(
+//         // alignment: Alignment.center, //for center
+//         color: Colors.orange,
+//         width: 100,
+//         child: Column(
+//           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//           crossAxisAlignment: CrossAxisAlignment.center,
+//           children: [
+//             Text(
+//               'Text01',
+//             style: TextStyle(fontSize: 20.0),
+//             ),
+//             Text(
+//               'Text01',
+//               style: TextStyle(fontSize: 20.0),
+//             ),
+//             Text(
+//               'Text01',
+//               style: TextStyle(fontSize: 20.0),
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
