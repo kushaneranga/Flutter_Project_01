@@ -429,49 +429,104 @@ import 'package:flutter/material.dart';
 
 // 9th Test.
 
-void main (){
-  runApp(MyApp());
-}
+// void main (){
+//   runApp(MyApp());
+// }
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'My Test App',
-      home: MyHomePage(),
-    );
-  }
-}
+// class MyApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       title: 'My Test App',
+//       home: MyHomePage(),
+//     );
+//   }
+// }
 
-// ignore: must_be_immutable
-class MyHomePage extends StatelessWidget {
-  int count = 0;
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Kushan Eranga'),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-                'Fist Flutter Project one',
-              style: TextStyle(fontSize: 20.0),
-            ),
-            Text(
-              '$count', // Or=> count.toString(),
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
-        onPressed: (){},
-      ),
-    );
-  }
-}
+// ----------------------------StatefulWidget-----------------------------------
+
+// class MyHomePage extends StatefulWidget {
+
+//   @override
+//   _MyHomePageState createState() => _MyHomePageState();
+// }
+
+// class _MyHomePageState extends State<MyHomePage> {
+//   int count = 0;
+
+//   void increment() {
+//     setState(() {
+//       count = count + 1;
+//       print(count);
+//     });
+//   }
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text('Kushan Eranga'),
+//       ),
+//       body: Center(
+//         child: Column(
+//           mainAxisAlignment: MainAxisAlignment.center,
+//           children: <Widget>[
+//             Text(
+//               'Fist Flutter Project one',
+//               style: TextStyle(fontSize: 20.0),
+//             ),
+//             Text(
+//               '$count', // Or=> count.toString(),
+//               style: Theme.of(context).textTheme.display1,
+//             ),
+//           ],
+//         ),
+//       ),
+//       floatingActionButton: FloatingActionButton(
+//         child: Icon(Icons.add),
+//         onPressed: increment, // increment() => void type can't
+//       ),
+//     );
+//   }
+// }
+
+//-----------------------------------StatelessWidget---------------------------
+
+//ignore: must_be_immutable // this is comment Don't Change.
+// class MyHomePage extends StatelessWidget {
+//   int count = 0;
+//
+//   void increment() {
+//     count = count + 1;
+//     print(count);
+//   }
+//
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: Text('Kushan Eranga'),
+//       ),
+//       body: Center(
+//         child: Column(
+//           mainAxisAlignment: MainAxisAlignment.center,
+//           children: <Widget>[
+//             Text(
+//                 'Fist Flutter Project one',
+//               style: TextStyle(fontSize: 20.0),
+//             ),
+//             Text(
+//               '$count', // Or=> count.toString(),
+//               style: Theme.of(context).textTheme.display1,
+//             ),
+//           ],
+//         ),
+//       ),
+//       floatingActionButton: FloatingActionButton(
+//         child: Icon(Icons.add),
+//         onPressed: increment, // increment() => void type can't
+//       ),
+  //     );
+//   }
+// }
