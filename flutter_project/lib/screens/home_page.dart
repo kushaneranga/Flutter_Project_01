@@ -30,9 +30,10 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed:(){
-          Navigator.of(context).push(MaterialPageRoute(builder: (_){
-            return SecondScreen();
-          }));
+          // Navigator.of(context).push(MaterialPageRoute(builder: (_){
+          //   return SecondScreen();
+          // }));
+          Navigator.of(context).pushNamed('/second');
         },
         tooltip: 'Increment',
         child: Icon(Icons.add),
